@@ -1,0 +1,16 @@
+{
+  "name": "qcobjects-yamldocs",
+  "version": "1.0.0",
+  "description": "```sh docker run -v $(pwd):$(pwd) -w $(pwd) -it qcobjects/yamldocs yamldocs build markdown file=./config.yaml output=./CONFIG.md ```",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "yamldocs":"docker run -v $(pwd):$(pwd) -w $(pwd) -i qcobjects/yamldocs yamldocs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bin": {
+    "yamldocs": "./run-yamldocs.js"
+  }
+}
